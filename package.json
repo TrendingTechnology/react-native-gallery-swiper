@@ -35,21 +35,24 @@
     "node_modules": "./node_modules",
     "src": "./src"
   },
-  "main": "index.js",
+  "main": "./index.js",
   "dependencies": {
-    "prop-types": "15.6.2",
-    "react": "16.6.1",
-    "react-native": "0.57.5",
-    "react-timer-mixin": "0.13.4"
+    "prop-types": "^15.6.2",
+    "react-mixin": "^5.0.0",
+    "react-timer-mixin": "^0.13.4"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
   },
   "devDependencies": {
-    "babel-eslint": "10.0.1",
-    "eslint": "5.9.0",
-    "eslint-plugin-flowtype": "3.2.0",
-    "eslint-plugin-import": "2.14.0",
-    "eslint-plugin-jsx-a11y": "6.1.2",
-    "eslint-plugin-react": "7.11.1",
-    "eslint-plugin-react-native": "3.5.0"
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.9.0",
+    "eslint-plugin-flowtype": "^3.2.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-react-native": "^3.5.0"
   },
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
