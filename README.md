@@ -129,13 +129,6 @@ $ cd react-native-gallery-swiper/example/
 	3. emulator running in separate terminal
 	4. npm run android
 
-### 2. Install
-
-```bash
-$ cd react-native-gallery-swiper/
-$ npm install
-```
-
 ## License
 
 MIT licensed, as found in the LICENSE file.
