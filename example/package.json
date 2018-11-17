@@ -1,0 +1,21 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "lint": "./node_modules/.bin/eslint index.js src/"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "react": "16.6.1",
+    "react-native": "0.57.5",
+    "react-native-gallery-swiper": "^1.0.0"
+  },
+  "devDependencies": {
+    "metro-react-native-babel-preset": "0.49.2",
+    "react-test-renderer": "16.6.1"
+  }
+}
