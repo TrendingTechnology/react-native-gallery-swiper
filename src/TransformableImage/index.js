@@ -6,7 +6,7 @@ import ViewTransformer from "../ViewTransformer";
 export default class TransformableImage extends PureComponent {
     static propTypes = {
         image: PropTypes.shape({
-            uri: PropTypes.string.isRequired,
+            uri: PropTypes.string,
             dimensions: PropTypes.shape({ width: PropTypes.number, height: PropTypes.number })
         }).isRequired,
         style: ViewPropTypes ? ViewPropTypes.style : View.propTypes.style,
@@ -162,7 +162,7 @@ export default class TransformableImage extends PureComponent {
         const imageProps = {
             ...this.props,
             imageLoaded,
-            source: { uri: image.uri },
+            source: image.source ? image.source : { uri: image.uri },
             style: [style, { backgroundColor: "transparent" }],
             resizeMode: resizeMode,
             onLoadStart: this.onLoadStart,
