@@ -1,0 +1,60 @@
+{
+  "version": "1.0.0",
+  "name": "react-native-gallery-swiper",
+  "description": "An easy and simple to use React Native component to render an image gallery with common gestures like pan, pinch and double tap.  Supporting both iOS and Android.",
+  "keywords": [
+    "react-native-gallery-swiper",
+    "react-native",
+    "gallery",
+    "images",
+    "album",
+    "swiper",
+    "pinch",
+    "zoom",
+    "double tap",
+    "camera roll",
+    "pictures",
+    "ios",
+    "android"
+  ],
+  "homepage": "https://github.com/Luehang/react-native-gallery-swiper",
+  "author": {
+    "name": "Lue Hang",
+    "email": "lue_hang@hotmail.com",
+    "url": "https://www.luehangs.site"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Luehang/react-native-gallery-swiper"
+  },
+  "bugs": {
+    "url": "https://github.com/Luehang/react-native-gallery-swiper/issues"
+  },
+  "directories": {
+    "example": "./example",
+    "node_modules": "./node_modules",
+    "src": "./src"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "prop-types": "15.6.2",
+    "react": "16.6.1",
+    "react-native": "0.57.5",
+    "react-timer-mixin": "0.13.4"
+  },
+  "devDependencies": {
+    "babel-eslint": "10.0.1",
+    "eslint": "5.9.0",
+    "eslint-plugin-flowtype": "3.2.0",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-jsx-a11y": "6.1.2",
+    "eslint-plugin-react": "7.11.1",
+    "eslint-plugin-react-native": "3.5.0"
+  },
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "lint": "./node_modules/.bin/eslint index.js src/"
+  },
+  "license": "MIT"
+}
