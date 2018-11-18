@@ -4,6 +4,8 @@
 
 ![react-native-gallery-swiper](https://www.luehangs.site/videos/react-native-gallery-swiper-demo.gif)
 
+Learn more about React Native with project examples along with Cyber Security and Ethical Hacking at [LH BLOG](https://www.luehangs.site).
+
 - [Install](#install)
 - [Usage Example](#usage-example)
 - [API](#api)
@@ -64,18 +66,18 @@ render() {
 
 Props | Description | Type | Default
 ------ | ------ | ------ | ------
-`images` | Your array of images | `array` | Required
-`initialPage` | Image displayed first | `number` | `0`
-`imageComponent` | Custom function to render your images, 1st param is the image props, 2nd is its dimensions | `function` | `<Image>` component
-`errorComponent` | Custom function to render the page of an image that couldn't be displayed | `function` | A `<View>` with a stylized error
-`flatListProps` | Props to be passed to the underlying `FlatList` | `object` | `{windowSize: 3}`
-`pageMargin` | Blank space to show between images | `number` | `0`
-`onPageSelected` | Fired with the index of page that has been selected | `function`
-`onPageScrollStateChanged` | Called when page scrolling state has changed, see [scroll state and events](#scroll-state-and-events) | `function`
-`onPageScroll` | Scroll event, see [scroll state and events](#scroll-state-and-events) | `function`
-`scrollViewStyle` | Custom style for the `FlatList` component | `object` | `{}`
-`onSingleTapConfirmed` | Fired after a single tap | `function`
-`onLongPress` | Fired after a long press | `function`
+`images` | An array of objects.  `uri` or `source` is a required field. EX. `[{ source: require("yourApp/image.png"), dimensions: { width: 1080, height: 1920 } }, { uri: "https://luehangs.site/pic-chat-app-images/animals-avian-beach-760984.jpg", dimensions: { width: 1080, height: 1920 } }, { uri: "https://luehangs.site/pic-chat-app-images/beautiful-blond-blonde-hair-478544.jpg"}]` | `Array` | Required
+`initialPage` | Index of image to be displayed first. | `number` | `0`
+`imageComponent` | Custom function to render your images. 1st param is the **image props** and 2nd is its **dimensions**. | `Function` | `<Image/>` component
+`errorComponent` | Custom function to render the page of an image that couldn't be displayed. | `Function` | A `<View/>` with a stylized error
+`flatListProps` | Props to be passed to the underlying `FlatList`. | `object` | `{windowSize: 3}`
+`pageMargin` | Blank margin space to show between images. | `number` | `0`
+`onPageSelected` | Fired with the index of page that has been selected. | `Function`
+`onPageScrollStateChanged` | Called when page scrolling state has changed, see [scroll state and events](#scroll-state-and-events). | `Function`
+`onPageScroll` | Scroll event, see [scroll state and events](#scroll-state-and-events). | `Function`
+`scrollViewStyle` | Custom style for the `FlatList` component. | `Object` | `{}`
+`onSingleTapConfirmed` | Executed after a single tap. | `Function`
+`onLongPress` | Executed after a long press. | `Function`
 
 ## Scroll state and events
 
