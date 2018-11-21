@@ -1,5 +1,5 @@
 {
-  "version": "1.0.3",
+  "version": "1.0.4",
   "name": "react-native-gallery-swiper",
   "description": "An easy and simple to use React Native component to render an image gallery with common gestures like pan, pinch and double tap.  Supporting both iOS and Android.",
   "keywords": [
